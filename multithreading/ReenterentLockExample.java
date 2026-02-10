@@ -29,6 +29,7 @@ public class ReenterentLockExample {
     ReenterentLockExample r=new ReenterentLockExample();
     r.outerMethod();
     r.innerMethod();
+    r.outerMethod();
  }
     
 }
