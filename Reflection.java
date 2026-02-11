@@ -22,6 +22,7 @@ public class Reflection {
        Method[]methods= birdClass.getDeclaredMethods();
        for(Method m:methods){
         System.out.println("Method Name: " + m.getName());
+        System.out.println("Learnt ");
        }
 
     
