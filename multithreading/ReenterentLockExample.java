@@ -1,5 +1,8 @@
 package multithreading;
+// Why is it called "Reentrant"?
+// A lock is reentrant if a thread that already holds the lock can acquire it again without deadlocking itself.
 
+// It maintains a hold count. If Thread A locks the object, the count is 1. If Thread A calls another method that requires the same lock, the count becomes 2. The lock is only truly released when the count returns to 0.
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
